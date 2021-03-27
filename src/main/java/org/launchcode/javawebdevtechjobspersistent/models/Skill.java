@@ -10,6 +10,11 @@ public class Skill extends AbstractEntity {
 
     @Size(min = 1, max = 250)
     @NotNull
-    private String skillDescription;
+    private String description;
 
+    public String getDescription() {
+        return description;
+    }
+//SOMETHING IS WRONG WITH SKILLS FORM - WON'T SUBMIT INFO
+    public Skill(){}
 }

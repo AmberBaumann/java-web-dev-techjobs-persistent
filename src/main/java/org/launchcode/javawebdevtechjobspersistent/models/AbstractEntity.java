@@ -2,7 +2,7 @@ package org.launchcode.javawebdevtechjobspersistent.models;
 
 
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.MappedSuperclass;
