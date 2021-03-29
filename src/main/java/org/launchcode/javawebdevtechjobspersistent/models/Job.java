@@ -11,7 +11,9 @@ public class Job extends AbstractEntity{
 
     @ManyToOne
     private Employer employer;
-
+//NEED TO FIGURE OUT MANY TO MANY RELATIONSHIP WITH SKILL CLASS.
+    //PROGRAM WILL NOT RUN AT VIEW/{jobId} because it is not properly set up.
+    //ERROR SHOWING INITIALLY AT /VIEW LINE 6
     @ManyToMany
     private List<Skill> skills;
 
@@ -41,4 +43,7 @@ public class Job extends AbstractEntity{
     public void setSkills(List<Skill> skills) {
         this.skills = skills;
     }
+
+
+
 }
